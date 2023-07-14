@@ -192,42 +192,33 @@
         <img class="svg decor" src="assets/images/icons/decor.svg">
     </div>
 
-    <form action="https://prayermaduekestore.us15.list-manage.com/subscribe/post?u=a1ded7fdc64b5e8e70cbf9c53&amp;id=7956285b20" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <form action="https://sendfox.com/form/1gz86j/m5ev88" method="post" id="m5ev88" class="sendfox-form" data-async="true" data-recaptcha="false">
         <div class="form-inputs">
             <div class="name">
-                <div class="mc-field-group animate reveal">
-                    <input type="text" required value="" name="FNAME" class="" id="mce-FNAME" placeholder="eg: John">
-                    <label for="mce-FNAME">First Name</label>
+                <div class="sendfox-group animate reveal">
+                    <input type="text" required value="" name="first_name" class="" id="sendfox_form_name" placeholder="eg: John">
+                    <label for="sendfox_form_name">First Name</label>
                 </div>
-                <div class="mc-field-group animate reveal">
-                    <input type="text" required value="" name="LNAME" class="" id="mce-LNAME" placeholder="eg: Doe">
-                    <label for="mce-LNAME">Last Name</label>
+                <div class="sendfox-group animate reveal">
+                    <input type="text" required value="" name="last_name" class="" id="sendfox_form_last_name" placeholder="eg: Doe">
+                    <label for="sendfox_form_last_name">Last Name</label>
                 </div>
             </div>
 
-            <div class="mc-field-group animate reveal">
-                <input type="email" required value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="eg: johndoe@domain.com">
-                <label for="mce-EMAIL">Email Address</label>
+            <div class="sendfox-group animate reveal">
+                <input type="email" required value="" name="email" class="required email" id="sendfox_form_email" placeholder="eg: johndoe@domain.com">
+                <label for="sendfox_form_email">Email Address</label>
             </div>
         </div>
 
         <div class="form-bottom">
-            <input type="submit" value="Send my free boxset!" name="subscribe" id="mc-embedded-subscribe" class="button animate reveal">
+            <button type="submit" name="submit" id="submit" class="button animate reveal">Send my free boxset!</button>
             <p class="disclaimer animate reveal">We're committed to your privacy. We will not spam, rent or sell your information. We use the information you provide to us to contact you about our relevant content, devotionals, and new book releases. You may unsubscribe from these communications at any time.</p>
 
-            <div id="mce-responses" class="clear">
-                <div class="response" id="mce-error-response" style="display:none"></div>
-                <div class="response" id="mce-success-response" style="display:none"></div>
-            </div>
-
-            <div style="position: absolute; left: -5000px;" aria-hidden="true">
-                <input type="text" name="b_a1ded7fdc64b5e8e70cbf9c53_7956285b20" tabindex="-1" value="">
-            </div>
+            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="a_password" tabindex="-1" value="" autocomplete="off" /></div>
         </div>
     </form>
-
-    <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
-    <script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text'; }(jQuery));var $mcj = jQuery.noConflict(true);</script>
+    <script src="https://sendfox.com/js/form.js"></script>
 </section>
 
 <div id="download-boxset" class="modal">
