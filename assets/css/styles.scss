@@ -805,6 +805,12 @@ button.button {
 		border: 1px solid #111111 !important;
 	}
 
+	&:disabled {
+		background-color: #999999 !important;
+		border: 1px solid #999999 !important;
+		cursor: wait;
+	}
+
 	&.w-icon {
 		display: grid !important;
 		grid-auto-flow: column !important;

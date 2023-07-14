@@ -747,6 +747,13 @@ button.button:focus {
   background-color: #111111 !important;
   border: 1px solid #111111 !important;
 }
+input[type=submit]:disabled,
+a.button:disabled,
+button.button:disabled {
+  background-color: #999999 !important;
+  border: 1px solid #999999 !important;
+  cursor: wait;
+}
 input[type=submit].w-icon,
 a.button.w-icon,
 button.button.w-icon {
