@@ -2694,8 +2694,10 @@ body.sidebar-opened {
 	}
 }
 
-.sendfox-form {
-	input:not([type="submit"]) {
+.mailster-form {
+
+	input[type="text"],
+	input[type="email"] {
 		padding: 15px 25px;
 		border: 1px solid rgba(68, 68, 68, 0.2);
 		color: #444444;
@@ -2784,7 +2786,9 @@ body.sidebar-opened {
 	}
 
 	&.compact {
-		input:not([type="submit"]) {
+
+		input[type="text"],
+		input[type="email"] {
 			padding: 10px 15px !important;
 			padding-top: 30px !important;
 
@@ -2836,7 +2840,41 @@ body.sidebar-opened {
 		outline: 0;
 	}
 
-	.sendfox-group {
+	.mailster-checkbox {
+		display: grid;
+		grid-auto-flow: column;
+		grid-template-columns: auto 1fr;
+		text-align: left;
+		align-items: center;
+		grid-gap: 5px;
+		cursor: pointer;
+
+		label {
+			position: relative;
+			padding: 0px 5px;
+			position: relative;
+			line-height: 25px;
+			opacity: 1;
+			color: #999999;
+			cursor: pointer;
+
+			a {
+				color: #999999;
+
+				&:hover {
+					color: #000000;
+				}
+			}
+		}
+
+		[type=checkbox] {
+			width: 20px;
+			height: 20px;
+			cursor: pointer;
+		}
+	}
+
+	.mailster-wrapper {
 		display: grid;
 		grid-gap: 10px;
 		position: relative;
@@ -2976,8 +3014,8 @@ body.sidebar-opened {
 	}
 }
 
-#sendfox-form {
-	.sendfox-group {
+.mailster-form {
+	.mailster-wrapper {
 		display: grid;
 		grid-gap: 10px;
 		position: relative;
@@ -4719,23 +4757,24 @@ body.sidebar-opened {
 					grid-auto-flow: row;
 				}
 			}
-		}
 
-		.form-bottom {
-			display: grid;
-			grid-gap: 20px;
+			.form-bottom {
+				display: grid;
+				grid-gap: 20px;
 
-			.button {
-				display: block;
-				width: 100%;
-				padding: 20px 40px !important;
-				justify-self: center;
+				.button {
+					display: block;
+					width: 100%;
+					padding: 20px 40px !important;
+					justify-self: center;
 
-				@media (max-width: 800px) {
-					padding: 18px 36px !important;
+					@media (max-width: 800px) {
+						padding: 18px 36px !important;
+					}
 				}
 			}
 		}
+
 	}
 
 	.disclaimer {

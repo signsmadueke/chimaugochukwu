@@ -112,25 +112,6 @@
         <div class="content">
             <h3 class="animate reveal">Ven. Chima Ugochukwu</h3>
             <p class="animate reveal">Ven. Chima Ugochukwu is the Senior Pastor of one of Nigeria's largest faith-based prayer ministries, The Intercessory Army for Christ also known as the WARMEN, His ordained minister of the Church of Nigeria, Anglican Communion. His weekly services draw thousands watching on TV in Nigeria and around the world.<br><br>He is the author of more than 35 books, many of them bestsellers, and is recognized as one of the most influential Christian leaders out of Nigeria. He resides in Anambra State, Nigeria with his wife and children.</p>
-            <div id="social" class="animate reveal">
-                <ul>
-                    <li>
-                        <a href="https://facebook.com/prayermadueke">
-                            <img class="svg" src="assets/images/icons/social/facebook.svg" height="15px" alt="Facebook">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://instagram.com/prayermadueke">
-                            <img class="svg" src="assets/images/icons/social/instagram.svg" height="15px" alt="Instagram">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://twitter.com/prayermadueke">
-                            <img class="svg" src="assets/images/icons/social/twitter.svg" height="15px" alt="Twitter">
-                        </a>
-                    </li>
-                </ul>
-            </div>
         </div>
     </div>
 </section>
@@ -192,58 +173,48 @@
         <img class="svg decor" src="assets/images/icons/decor.svg">
     </div>
 
-    <form method="post" action="https://sendfox.com/form/1gz86j/m5ev88" class="sendfox-form" id="m5ev88" data-async="true" data-recaptcha="true">
-        <div class="form-inputs">
+    <link rel='stylesheet' id='mailster-form-default-css' href='https://chimaugochukwu.com/wp-content/plugins/mailster/assets/css/form-default-style.min.css?ver=3.3.7' media='all' />
+    <form action="https://chimaugochukwu.com/mailster/subscribe" method="post" class="mailster-form mailster-form-submit extern mailster-form-1" novalidate>
+        <input name="_action" type="hidden" value="subscribe">
+        <input name="_timestamp" type="hidden" value="1689932487">
+        <input name="_referer" type="hidden" value="extern">
+        <input name="_nonce" type="hidden" value="fcc6c3a0ca">
+        <input name="formid" type="hidden" value="1">
+        <div class="form-inputs mailster-form-fields">
             <div class="name">
-                <div class="sendfox-group animate reveal">
-                    <input type="text" required value="" name="first_name" class="" id="sendfox_form_name" placeholder="eg: John">
-                    <label for="sendfox_form_name">First Name</label>
+                <div class="mailster-wrapper mailster-firstname-wrapper animate reveal">
+                    <input id="mailster-firstname-1" name="firstname" type="text" value="" class="input mailster-firstname mailster-required" aria-required="true" aria-label="First Name" placeholder="eg: John">
+                    <label for="mailster-firstname-1">First Name <span class="mailster-required">*</span>
+                    </label>
                 </div>
-                <div class="sendfox-group animate reveal">
-                    <input type="text" required value="" name="last_name" class="" id="sendfox_form_last_name" placeholder="eg: Doe">
-                    <label for="sendfox_form_last_name">Last Name</label>
+                <div class="mailster-wrapper mailster-lastname-wrapper">
+                    <input id="mailster-lastname-1" name="lastname" type="text" value="" class="input mailster-lastname" aria-required="false" aria-label="Last Name" placeholder="eg: Doe">
+                    <label for="mailster-lastname-1">Last Name</label>
                 </div>
             </div>
 
-            <div class="sendfox-group animate reveal">
-                <input type="email" required value="" name="email" class="required email" id="sendfox_form_email" placeholder="eg: johndoe@domain.com">
-                <label for="sendfox_form_email">Email Address</label>
+            <div class="mailster-wrapper mailster-email-wrapper animate reveal">
+                <input id="mailster-email-1" name="email" type="email" value="" class="input mailster-email mailster-required email" aria-required="true" aria-label="Email" spellcheck="false" placeholder="eg: johndoe@domain.com">
+                <label for="mailster-email-1">Email <span class="mailster-required">*</span>
+                </label>
+            </div>
+            
+            <div class="form-bottom">                
+                <div class="mailster-wrapper mailster-_gdpr-wrapper mailster-checkbox animate reveal">
+                    <input type="hidden" name="_gdpr" value="0">
+                    <input id="mailster-_gdpr-1" name="_gdpr" type="checkbox" value="1" class="mailster-_gdpr mailster-required" aria-required="true" aria-label="I agree to the privacy policy and terms." required>
+                    <label for="mailster-_gdpr-1">I agree to the <a href="https://chimaugochukwu.com/?page_id=3" target="_top">privacy policy and terms</a>.</label>
+                </div>
+                <div class="mailster-wrapper mailster-submit-wrapper form-submit">
+                    <input name="submit" type="submit" value="Send my free boxset!" class="submit-button button animate reveal" aria-label="Send my free boxset!">
+                </div>
             </div>
         </div>
-
-        <div class="form-bottom">
-            <button type="submit" name="submit" id="submit" class="button animate reveal">Send my free boxset!</button>
-            <p class="disclaimer animate reveal">We're committed to your privacy. We will not spam, rent or sell your information. We use the information you provide to us to contact you about our relevant content, devotionals, and new book releases. You may unsubscribe from these communications at any time.</p>
-
-            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="a_password" tabindex="-1" value="" autocomplete="off" /></div>
-        </div>
-    </form>
-    <script src="https://sendfox.com/js/form.js"></script>			
+    </form>		
 </section>
 
 <footer id="footer" class="container" style="padding: 30px; grid-template-columns: 1fr 1fr;">
-    <p class="copyright animate reveal">&copy; 2020 Chima Ugochukwu. All rights reserved.</p>
-    <div id="social">
-        <p>Connect with me</p>
-        <span></span>
-        <ul>
-			<li>
-                <a href="https://facebook.com/prayermadueke">
-                    <img class="svg" src="assets/images/icons/social/facebook.svg" height="15px" alt="Facebook">
-                </a>
-            </li>
-            <li>
-                <a href="https://instagram.com/prayermadueke">
-                    <img class="svg" src="assets/images/icons/social/instagram.svg" height="15px" alt="Instagram">
-                </a>
-            </li>
-            <li>
-                <a href="https://twitter.com/prayermadueke">
-                    <img class="svg" src="assets/images/icons/social/twitter.svg" height="15px" alt="Twitter">
-                </a>
-            </li>
-        </ul>
-    </div>
+    <p class="copyright animate reveal">&copy; 2023 Chima Ugochukwu. All rights reserved.</p>
 </footer>
 
 <script src="assets/js/popper.js"></script>

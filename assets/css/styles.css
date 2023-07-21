@@ -2351,7 +2351,8 @@ body.sidebar-opened .copyright {
   }
 }
 
-.sendfox-form input:not([type=submit]) {
+.mailster-form input[type=text],
+.mailster-form input[type=email] {
   padding: 15px 25px;
   border: 1px solid rgba(68, 68, 68, 0.2);
   color: #444444;
@@ -2363,7 +2364,7 @@ body.sidebar-opened .copyright {
   -webkit-appearance: none;
   border-radius: 5px !important;
 }
-.sendfox-form input:not([type=submit])::-moz-placeholder {
+.mailster-form input[type=text]::-moz-placeholder, .mailster-form input[type=email]::-moz-placeholder {
   color: #444444;
   opacity: 0;
   font-weight: 500;
@@ -2372,7 +2373,8 @@ body.sidebar-opened .copyright {
   font-size: 16px;
   line-height: 16px;
 }
-.sendfox-form input:not([type=submit])::placeholder {
+.mailster-form input[type=text]::placeholder,
+.mailster-form input[type=email]::placeholder {
   color: #444444;
   opacity: 0;
   font-weight: 500;
@@ -2381,78 +2383,92 @@ body.sidebar-opened .copyright {
   font-size: 16px;
   line-height: 16px;
 }
-.sendfox-form input:not([type=submit]):hover {
+.mailster-form input[type=text]:hover,
+.mailster-form input[type=email]:hover {
   background-color: rgba(68, 68, 68, 0.05);
   border: 1px solid rgba(68, 68, 68, 0.3);
 }
-.sendfox-form input:not([type=submit]):focus {
+.mailster-form input[type=text]:focus,
+.mailster-form input[type=email]:focus {
   background-color: rgba(68, 68, 68, 0.05);
   border: 1px solid rgba(68, 68, 68, 0.3);
 }
-.sendfox-form input:not([type=submit]):focus + label {
+.mailster-form input[type=text]:focus + label,
+.mailster-form input[type=email]:focus + label {
   padding-top: 15px;
   font-size: 14px;
 }
-.sendfox-form input:not([type=submit]):active {
+.mailster-form input[type=text]:active,
+.mailster-form input[type=email]:active {
   background-color: rgba(68, 68, 68, 0.05);
   border: 1px solid rgba(68, 68, 68, 0.3);
 }
-.sendfox-form input:not([type=submit]):active + label {
+.mailster-form input[type=text]:active + label,
+.mailster-form input[type=email]:active + label {
   padding-top: 15px;
   font-size: 14px;
 }
-.sendfox-form input:not([type=submit]):valid + label {
+.mailster-form input[type=text]:valid + label,
+.mailster-form input[type=email]:valid + label {
   padding-top: 15px;
   font-size: 14px;
 }
-.sendfox-form input:not([type=submit]).compact {
+.mailster-form input[type=text].compact,
+.mailster-form input[type=email].compact {
   padding: 10px 15px !important;
   padding-top: 30px;
 }
-.sendfox-form input:not([type=submit]).compact:focus + label {
+.mailster-form input[type=text].compact:focus + label,
+.mailster-form input[type=email].compact:focus + label {
   padding-top: 10px;
   padding-left: 5px;
   font-size: inherit;
   transform: scale(0.8);
 }
-.sendfox-form input:not([type=submit]).compact:active + label {
+.mailster-form input[type=text].compact:active + label,
+.mailster-form input[type=email].compact:active + label {
   padding-top: 10px;
   padding-left: 5px;
   font-size: inherit;
   transform: scale(0.8);
 }
-.sendfox-form input:not([type=submit]).compact:valid + label {
+.mailster-form input[type=text].compact:valid + label,
+.mailster-form input[type=email].compact:valid + label {
   padding-top: 10px;
   padding-left: 5px;
   font-size: inherit;
   transform: scale(0.8);
 }
-.sendfox-form.compact input:not([type=submit]) {
+.mailster-form.compact input[type=text],
+.mailster-form.compact input[type=email] {
   padding: 10px 15px !important;
   padding-top: 30px !important;
 }
-.sendfox-form.compact input:not([type=submit]):focus + label {
+.mailster-form.compact input[type=text]:focus + label,
+.mailster-form.compact input[type=email]:focus + label {
   padding-top: 10px;
   padding-left: 5px;
   font-size: inherit;
   transform: scale(0.8);
 }
-.sendfox-form.compact input:not([type=submit]):active + label {
+.mailster-form.compact input[type=text]:active + label,
+.mailster-form.compact input[type=email]:active + label {
   padding-top: 10px;
   padding-left: 5px;
   font-size: inherit;
   transform: scale(0.8);
 }
-.sendfox-form.compact input:not([type=submit]):valid + label {
+.mailster-form.compact input[type=text]:valid + label,
+.mailster-form.compact input[type=email]:valid + label {
   padding-top: 10px;
   padding-left: 5px;
   font-size: inherit;
   transform: scale(0.8);
 }
-.sendfox-form.compact label {
+.mailster-form.compact label {
   padding: 22px 15px;
 }
-.sendfox-form label {
+.mailster-form label {
   padding: 30px 25px;
   color: #444444;
   opacity: 0.5;
@@ -2468,15 +2484,44 @@ body.sidebar-opened .copyright {
           user-select: none;
   outline: 0;
 }
-.sendfox-form .sendfox-group {
+.mailster-form .mailster-checkbox {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: auto 1fr;
+  text-align: left;
+  align-items: center;
+  grid-gap: 5px;
+  cursor: pointer;
+}
+.mailster-form .mailster-checkbox label {
+  position: relative;
+  padding: 0px 5px;
+  position: relative;
+  line-height: 25px;
+  opacity: 1;
+  color: #999999;
+  cursor: pointer;
+}
+.mailster-form .mailster-checkbox label a {
+  color: #999999;
+}
+.mailster-form .mailster-checkbox label a:hover {
+  color: #000000;
+}
+.mailster-form .mailster-checkbox [type=checkbox] {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+.mailster-form .mailster-wrapper {
   display: grid;
   grid-gap: 10px;
   position: relative;
 }
-.sendfox-form input.mce_inline_error {
+.mailster-form input.mce_inline_error {
   border: 1px solid rgb(218, 18, 51);
 }
-.sendfox-form p.sendfox-message.error {
+.mailster-form p.sendfox-message.error {
   text-align: left;
   line-height: 20px;
   font-size: 12px;
@@ -2484,17 +2529,17 @@ body.sidebar-opened .copyright {
   position: relative;
   color: rgb(218, 18, 51) !important;
 }
-.sendfox-form p.sendfox-message.error a {
+.mailster-form p.sendfox-message.error a {
   color: rgb(218, 18, 51) !important;
 }
-.sendfox-form p.sendfox-message.error:before {
+.mailster-form p.sendfox-message.error:before {
   content: url(../images/icons/error-bubble.svg);
   padding-left: 0;
   position: absolute;
   top: 0;
   left: 0;
 }
-.sendfox-form p.sendfox-message.success {
+.mailster-form p.sendfox-message.success {
   text-align: left;
   line-height: 20px;
   font-size: 12px;
@@ -2502,54 +2547,54 @@ body.sidebar-opened .copyright {
   position: relative;
   color: rgb(103, 218, 18) !important;
 }
-.sendfox-form p.sendfox-message.success a {
+.mailster-form p.sendfox-message.success a {
   color: rgb(103, 218, 18) !important;
 }
-.sendfox-form p.sendfox-message.success:before {
+.mailster-form p.sendfox-message.success:before {
   content: url(../images/icons/success-bubble.svg);
   padding-left: 0;
   position: absolute;
   top: 0;
   left: 0;
 }
-.sendfox-form #mce-responses .response {
+.mailster-form #mce-responses .response {
   text-align: left;
   line-height: 20px;
   font-size: 12px;
   padding-left: 30px;
 }
-.sendfox-form #mce-responses .response:before {
+.mailster-form #mce-responses .response:before {
   padding-left: 0;
   position: absolute;
   top: 0;
   left: 0;
 }
-.sendfox-form #mce-responses .response#mce-success-response {
+.mailster-form #mce-responses .response#mce-success-response {
   position: relative;
   color: rgb(103, 218, 18) !important;
 }
-.sendfox-form #mce-responses .response#mce-success-response a {
+.mailster-form #mce-responses .response#mce-success-response a {
   color: rgb(103, 218, 18) !important;
 }
-.sendfox-form #mce-responses .response#mce-success-response:before {
+.mailster-form #mce-responses .response#mce-success-response:before {
   content: url(../images/icons/success-bubble.svg);
 }
-.sendfox-form #mce-responses .response#mce-error-response {
+.mailster-form #mce-responses .response#mce-error-response {
   position: relative;
   color: rgb(218, 18, 51) !important;
 }
-.sendfox-form #mce-responses .response#mce-error-response a {
+.mailster-form #mce-responses .response#mce-error-response a {
   color: rgb(218, 18, 51) !important;
 }
-.sendfox-form #mce-responses .response#mce-error-response:before {
+.mailster-form #mce-responses .response#mce-error-response:before {
   content: url(../images/icons/error-bubble.svg);
 }
-#sendfox-form .sendfox-group {
+.mailster-form .mailster-wrapper {
   display: grid;
   grid-gap: 10px;
   position: relative;
 }
-#sendfox-form input.mce_inline_error {
+.mailster-form input.mce_inline_error {
   border: 1px solid rgb(218, 18, 51);
 }
 
@@ -3969,18 +4014,18 @@ body.sidebar-opened .copyright {
     grid-auto-flow: row;
   }
 }
-#boxset-cta form .form-bottom {
+#boxset-cta form .form-inputs .form-bottom {
   display: grid;
   grid-gap: 20px;
 }
-#boxset-cta form .form-bottom .button {
+#boxset-cta form .form-inputs .form-bottom .button {
   display: block;
   width: 100%;
   padding: 20px 40px !important;
   justify-self: center;
 }
 @media (max-width: 800px) {
-  #boxset-cta form .form-bottom .button {
+  #boxset-cta form .form-inputs .form-bottom .button {
     padding: 18px 36px !important;
   }
 }
