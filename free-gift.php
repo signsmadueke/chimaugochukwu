@@ -187,7 +187,7 @@
                     <label for="mailster-firstname-1">First Name <span class="mailster-required">*</span>
                     </label>
                 </div>
-                <div class="mailster-wrapper mailster-lastname-wrapper">
+                <div class="mailster-wrapper mailster-lastname-wrapper animate reveal">
                     <input id="mailster-lastname-1" name="lastname" type="text" value="" class="input mailster-lastname" aria-required="false" aria-label="Last Name" placeholder="eg: Doe">
                     <label for="mailster-lastname-1">Last Name</label>
                 </div>
