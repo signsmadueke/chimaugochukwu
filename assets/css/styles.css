@@ -302,8 +302,7 @@ svg:not(:root) {
 
 blockquote {
   border-left: 2px solid #444444;
-  -webkit-margin-start: 0;
-          margin-inline-start: 0;
+  margin-inline-start: 0;
   padding: 20px;
   padding-left: 40px;
   margin: 40px 0;
@@ -3667,7 +3666,6 @@ body.sidebar-opened .copyright {
   max-width: 700px;
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 10px;
-  filter: saturate(0);
 }
 #about-author .about .content {
   display: grid;
