@@ -67,28 +67,28 @@
     <div id="gifts">
         <div class="gift animate reveal">
             <div class="image">
-                <img src="assets/images/books/book1.jpg" alt="Book Cover of Quarantined for God's Deliverance">
+                <img src="assets/images/books/book1.jpg" alt="">
             </div>
             <div class="shadow">
-                <img src="assets/images/books/book1.jpg" alt="Book Cover of Quarantined for God's Deliverance">
+                <img src="assets/images/books/book1.jpg" alt="">
             </div>
         </div>
 
         <div class="gift animate reveal">
             <div class="image">
-                <img src="assets/images/books/book2.jpg" alt="Book Cover of Quarantined for God's Deliverance">
+                <img src="assets/images/books/book2.jpeg" alt="">
             </div>
             <div class="shadow">
-                <img src="assets/images/books/book2.jpg" alt="Book Cover of Quarantined for God's Deliverance">
+                <img src="assets/images/books/book2.jpeg" alt="">
             </div>
         </div>
 
         <div class="gift animate reveal">
             <div class="image">
-                <img src="assets/images/books/book3.jpg" alt="Book Cover of Quarantined for God's Deliverance">
+                <img src="assets/images/books/book3.jpeg" alt="">
             </div>
             <div class="shadow">
-                <img src="assets/images/books/book3.jpg" alt="Book Cover of Quarantined for God's Deliverance">
+                <img src="assets/images/books/book3.jpeg" alt="">
             </div>
         </div>
     </div>
